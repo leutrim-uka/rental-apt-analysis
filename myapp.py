@@ -1,18 +1,7 @@
 import sys
 
 import streamlit as st
-import pandas as pd
-import geopandas as gpd
-import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
-import tempfile
 from questions import landing, q1, q2, q3, q4, q5
-from utils import remove_cold_rent_outliers
-import numpy as np
-
-# data = 'immo_data.csv'
-# df = pd.read_csv(data)
-# df = remove_cold_rent_outliers(df)
 
 
 def main():
