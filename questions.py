@@ -57,13 +57,13 @@ def q2():
 
     df = pd.read_csv('data/q2.csv')[['note', 'baseRent']]
 
-    st.write(df.head(10))
+    st.dataframe(df.head(10), use_container_width=True)
 
     image = Image.open('data/q2_berlin.png')
     st.image(image)
 
     st.subheader("Bonus: Which parts of Berlin have the lowest rent?")
-    st.write(df.tail(10))
+    st.dataframe(df.tail(10), use_container_width=True)
 
 def q3():
     question = f'Q3: {question3}'
@@ -90,7 +90,7 @@ def q3():
 
     # Show dataframe on screen
     st.text('The exact count of apartments with a specific heating type is shown below:')
-    st.write(df)
+    st.dataframe(df, use_container_width=True)
 
 def q4():
     question = f'Q4: {question4}'
